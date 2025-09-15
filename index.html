@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <title>GitHub Pages サンプル</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EEYT5EZTVP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EEYT5EZTVP');
+    </script>
+    
   </head>
   <body>
     <div id="header"></div>
@@ -12,24 +23,27 @@
       <section id="about">
         <h2>このサイトについて</h2>
         <p>
-          これはGitHub Pagesで公開しているサンプルページです。静的HTMLとCSSのみで構成されています。
+          これはGitHub Pagesで公開しているページです.
         </p>
       </section>
-      <section id="contact">
-        <h2>お問い合わせ</h2>
-        <p>
-          何か質問があれば、e-mailからご連絡ください。
-        </p>
+      <section id="event">
+        <h2>最近の出来事</h2>
+        <h3>2025.09.16</h3>
+        <p>Githubで新しくWeb siteを立ち上げました.</p>
+        <br>
       </section>
     </main>
+
+    <div id="footer"></div>
+
     <script>
       fetch("./header.html")
         .then((response) => response.text())
-        .then((data) => document.querySelector("#header").innerHTML = data)
+        .then((data) => document.querySelector("#header").innerHTML = data);
+      fetch("./footer.html")
+        .then((response) => response.text())
+        .then((data) => document.querySelector("#footer").innerHTML = data);
     </script>
-    
-    <footer>
-      <small>&copy; 2025 GitHub Pages</small>
-    </footer>
+
   </body>
 </html>

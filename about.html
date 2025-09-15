@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>About | プロフィール</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header"></div>
+    
+    <main>
+        <section id="profile">
+        <h1>プロフィール</h1>
+        <img src="profile.jpeg" alt="プロフィール写真" style="max-width:200px; border-radius:10px;">
+        <h3>野田 祥平 | Shohei K. Noda</h3>
+        <ul>
+            <strong>職名：</strong>研究開発職 (Bioinfomatician) <br>
+            <strong>学位：</strong>修士（理学）<br>
+            <strong>メール：</strong>snoda2108[@]gmail.com <br><br>
+            <a href="https://github.com/shohei020212" target="_blank" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16" fill="#181717">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+</a>
+        </ul>
+        </section>
+
+        <section id="biography">
+        <h2>経歴</h2>
+        <ul>
+            2025年 - 現在：会社員・研究開発職 <br>
+            2022年 - 2025年：京都大学 理学研究科 生物科学専攻 博士課程 <br>
+            2020年 - 2022年：神戸大学 理学研究科 生物学専攻 修士課程 <br>
+            2016年 - 2020年：東海大学 海洋学部 海洋生物学科 <br>
+        </ul>
+        </section>
+    
+        <section id="keywords">
+        <h2>研究キーワード</h2>
+        <dt>
+             <strong>生活史変異</strong>, <strong>ゲノミクス</strong>, <strong>家系分析</strong>, 個体群動態, サケ科魚類
+        </dt>
+        </section>
+    
+        <section id="funds">
+        <h2>研究費獲得状況</h2>
+        <ul>
+            <li>2023 - 2025年 | 日本学術振興会 科学研究費助成事業 特別研究員奨励費「家系分析に基づく、アマゴの生活史多様性が創発する個体群動態の安定化機構の解明 」</li>
+            <br>
+            <li>2023 - 2024年 | 文部科学省 科学研究費助成事業 新学術領域研究『学術研究支援基盤形成』 先進ゲノム支援」（先進ゲノム解析研究推進プラットフォーム）</li>
+            <br>
+        </ul>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+      fetch("./header.html")
+        .then((response) => response.text())
+        .then((data) => document.querySelector("#header").innerHTML = data);
+      fetch("./footer.html")
+        .then((response) => response.text())
+        .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+  </body>
+</html>

@@ -32,6 +32,9 @@ main {
   border-radius: 10px;
   box-shadow: 0 0 10px #ccc;
 }
+h2, h3 {
+  color: #005f8f;  /* 好きな色コードに変更可能 */
+}
 footer {
   text-align: center;
   padding: 10px 0;
