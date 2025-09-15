@@ -33,11 +33,23 @@ main {
   box-shadow: 0 0 10px #ccc;
 }
 h2, h3 {
-  color: #005f8f;  /* 好きな色コードに変更可能 */
+  color: #005f8f;
+}
+span a {
+  color: #007acc;
+  text-decoration: underline;
 }
 footer {
   text-align: center;
   padding: 10px 0;
   background: #eee;
   color: #555;
+}
+.keyword small {
+  font-size: 0.8em;
+  color: #005f8f;
+  background: rgb(236, 237, 240);
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin: 0 2px;
 }

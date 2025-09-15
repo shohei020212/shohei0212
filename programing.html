@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Programing</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header"></div>
+    
+    <main>
+        <section id="pipelines">
+        <h2>Pipelines</h2>
+        <h3>Genomics | ゲノム解析</h3>
+        <ol>
+            <li>
+                <span style="float:left"><a href="genomics_1.html">QC, Trimming, Alingment and SNP calling (Stacks)</a></span> <br>
+                Fastqデータのクオリティコントロール、フィルタリング、参照ゲノム配列へのアライメント、SNP抽出を実施できます. <br>
+                <span class="keyword"><small>genomics</small></span>
+                <span class="keyword"><small>dna-seq</small></span>
+                <span class="keyword"><small>snp</small></span> <br>
+                <span class="keyword"><small>nextflow</small></span>
+                <span class="keyword"><small>docker</small></span>
+                <span class="keyword"><small>fastqc</small></span>
+                <span class="keyword"><small>trimmomatic</small></span>
+                <span class="keyword"><small>bwa</small></span>
+                <span class="keyword"><small>samtools</small></span>
+                <span class="keyword"><small>stacks</small></span>
+            </li>
+        </ol>
+        <h3>Transcriptome | トランスクリプトーム解析</h3>
+        <ol>
+            <li></li>
+        </ol>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+      fetch("./header.html")
+        .then((response) => response.text())
+        .then((data) => document.querySelector("#header").innerHTML = data);
+      fetch("./footer.html")
+        .then((response) => response.text())
+        .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+  </body>
+</html>
